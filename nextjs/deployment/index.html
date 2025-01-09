@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://bt-nextjs.github.io/miscellaneous/websockets/examples/">
+        <link rel="canonical" href="https://bt-nextjs.github.io/nextjs/deployment/">
       
       
-        <link rel="prev" href="../setup/">
+        <link rel="prev" href="../data-fetching/">
       
       
-        <link rel="next" href="../troubleshooting/">
+        <link rel="next" href="../next-config/">
       
       
-      <link rel="icon" href="../../../assets/logo/next-js.ico">
+      <link rel="icon" href="../../assets/logo/next-js.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>Example - Next.js</title>
+        <title>Deployment - Next.js</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#6-deploymentmd-deploying-nextjs-apps" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,9 +90,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Next.js" class="md-header__button md-logo" aria-label="Next.js" data-md-component="logo">
+    <a href="../.." title="Next.js" class="md-header__button md-logo" aria-label="Next.js" data-md-component="logo">
       
-  <img src="../../../assets/logo/next-js.png" alt="logo">
+  <img src="../../assets/logo/next-js.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Example
+              Deployment
             
           </span>
         </div>
@@ -205,28 +210,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../blog/" class="md-tabs__link">
+        <a href="../../blog/" class="md-tabs__link">
           
   
   Blog
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../nextjs/intro/" class="md-tabs__link">
-          
-  
-  Next.js
 
         </a>
       </li>
@@ -243,7 +230,25 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../intro/" class="md-tabs__link">
+        <a href="../intro/" class="md-tabs__link">
+          
+  
+  Next.js
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../miscellaneous/intro/" class="md-tabs__link">
           
   
   Misc
@@ -282,9 +287,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Next.js" class="md-nav__button md-logo" aria-label="Next.js" data-md-component="logo">
+    <a href="../.." title="Next.js" class="md-nav__button md-logo" aria-label="Next.js" data-md-component="logo">
       
-  <img src="../../../assets/logo/next-js.png" alt="logo">
+  <img src="../../assets/logo/next-js.png" alt="logo">
 
     </a>
     Next.js
@@ -339,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/" class="md-nav__link">
+      <a href="../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -360,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -385,23 +390,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -412,7 +422,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Next.js
@@ -426,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nextjs/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -447,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nextjs/folder-structure/" class="md-nav__link">
+      <a href="../folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -468,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nextjs/routing/" class="md-nav__link">
+      <a href="../routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -489,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nextjs/api-routes/" class="md-nav__link">
+      <a href="../api-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nextjs/data-fetching/" class="md-nav__link">
+      <a href="../data-fetching/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -528,10 +538,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../nextjs/deployment/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Deployment
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -540,6 +568,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#6-deploymentmd-deploying-nextjs-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 6. deployment.md (Deploying Next.js Apps)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-nextjs-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Deploying Next.js Apps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Deploying Next.js Apps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-to-vercel" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Deploy to Vercel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-to-netlify" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Deploy to Netlify
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Deploy with Docker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -552,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nextjs/next-config/" class="md-nav__link">
+      <a href="../next-config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -611,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../theory/" class="md-nav__link">
+      <a href="../../theory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -644,28 +741,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -676,7 +768,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Misc
@@ -690,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../miscellaneous/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -749,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hoc/intro/" class="md-nav__link">
+      <a href="../../miscellaneous/hoc/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hoc/hooks-vs-hocs/" class="md-nav__link">
+      <a href="../../miscellaneous/hoc/hooks-vs-hocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -791,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hoc/naming-convention/" class="md-nav__link">
+      <a href="../../miscellaneous/hoc/naming-convention/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hoc/hooks/" class="md-nav__link">
+      <a href="../../miscellaneous/hoc/hooks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -838,8 +930,6 @@
                 
   
   
-    
-  
   
   
     
@@ -849,11 +939,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -867,7 +957,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             WebSockets
@@ -881,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../miscellaneous/websockets/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -902,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/" class="md-nav__link">
+      <a href="../../miscellaneous/websockets/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,17 +1010,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../miscellaneous/websockets/examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -939,7 +1022,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -952,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/" class="md-nav__link">
+      <a href="../../miscellaneous/websockets/troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1019,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../push-notifications/introduction/" class="md-nav__link">
+      <a href="../../miscellaneous/push-notifications/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1040,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../push-notifications/setup/" class="md-nav__link">
+      <a href="../../miscellaneous/push-notifications/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1061,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../push-notifications/examples/" class="md-nav__link">
+      <a href="../../miscellaneous/push-notifications/examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1082,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../push-notifications/best-practices/" class="md-nav__link">
+      <a href="../../miscellaneous/push-notifications/best-practices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1129,6 +1211,65 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#6-deploymentmd-deploying-nextjs-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 6. deployment.md (Deploying Next.js Apps)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-nextjs-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Deploying Next.js Apps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Deploying Next.js Apps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-to-vercel" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Deploy to Vercel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-to-netlify" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Deploy to Netlify
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Deploy with Docker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1142,16 +1283,28 @@
                   
 
 
-  <h1>Example</h1>
-
-<ul>
-<li>SignalR: Best for real-time communication (two-way communication) between clients and server.</li>
-<li>Push Notifications: Best for one-way alerts to users even when they are not actively interacting with the app.</li>
-</ul>
-<p>SignalR Example: A real-time chat app where users can send and receive messages instantly without refreshing the page. You might want to use SignalR to broadcast messages as they come in.</p>
-<p>Push Notifications Example: A notification when a user receives a new email, even if they are not actively on the app or the browser. This requires setting up push notifications with service workers.</p>
+<h2 id="6-deploymentmd-deploying-nextjs-apps">📝 <strong>6. <code>deployment.md</code> (Deploying Next.js Apps)</strong></h2>
+<h1 id="deploying-nextjs-apps">🚀 Deploying Next.js Apps</h1>
+<p>You can deploy Next.js apps to <strong>Vercel</strong> (recommended), <strong>Netlify</strong>, or other platforms.</p>
 <hr />
-<p>No, @microsoft/signalr and push notifications are not the same in React, though both can be used to achieve real-time communication.</p>
+<h2 id="deploy-to-vercel">✅ Deploy to Vercel</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>vercel<span class="w"> </span>deploy
+</span></code></pre></div>
+<hr />
+<h2 id="deploy-to-netlify">✅ Deploy to Netlify</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>netlify<span class="w"> </span>deploy
+</span></code></pre></div>
+<hr />
+<h2 id="deploy-with-docker">✅ Deploy with Docker</h2>
+<div class="language-dockerfile highlight"><span class="filename">Create a Dockerfile</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c"># Dockerfile</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">node:alpine</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">RUN</span><span class="w"> </span>npm<span class="w"> </span>install
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">RUN</span><span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>build
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">3000</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;npm&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;start&quot;</span><span class="p">]</span>
+</span></code></pre></div>
 
 
 
@@ -1187,7 +1340,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup">
+          <a href="../data-fetching/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Fetching">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1197,20 +1350,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Setup
+                Data Fetching
               </div>
             </div>
           </a>
         
         
           
-          <a href="../troubleshooting/" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting">
+          <a href="../next-config/" class="md-footer__link md-footer__link--next" aria-label="Next: Configuration">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Troubleshooting
+                Configuration
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1244,10 +1397,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
