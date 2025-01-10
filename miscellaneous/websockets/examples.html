@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://bt-nextjs.github.io/nextjs/folder-structure/">
+        <link rel="canonical" href="https://bt-nextjs.github.io/miscellaneous/websockets/examples.html">
       
       
-        <link rel="prev" href="../intro/">
+        <link rel="prev" href="setup.html">
       
       
-        <link rel="next" href="../routing/">
+        <link rel="next" href="troubleshooting.html">
       
       
       <link rel="icon" href="../../assets/logo/next-js.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Folder Structure - Next.js</title>
+        <title>Example - Next.js</title>
       
     
     
@@ -36,6 +36,8 @@
 
     
     
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
       
     
     
@@ -73,11 +75,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#nextjs-folder-structure" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Folder Structure
+              Example
             
           </span>
         </div>
@@ -210,10 +207,28 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../blog/" class="md-tabs__link">
+        <a href="../../blog/index.html" class="md-tabs__link">
           
   
   Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nextjs/intro.html" class="md-tabs__link">
+          
+  
+  Next.js
 
         </a>
       </li>
@@ -230,25 +245,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../intro/" class="md-tabs__link">
-          
-  
-  Next.js
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../miscellaneous/intro/" class="md-tabs__link">
+        <a href="../intro.html" class="md-tabs__link">
           
   
   Misc
@@ -344,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/" class="md-nav__link">
+      <a href="../../blog/index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -390,28 +387,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -422,7 +414,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Next.js
@@ -436,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../nextjs/intro.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -454,30 +446,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Folder Structure
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../nextjs/folder-structure.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -486,35 +458,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#folder-structure-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠 Folder Structure Comparison
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -527,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../routing/" class="md-nav__link">
+      <a href="../../nextjs/routing.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -548,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-routes/" class="md-nav__link">
+      <a href="../../nextjs/api-routes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -569,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-fetching/" class="md-nav__link">
+      <a href="../../nextjs/data-fetching.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployment/" class="md-nav__link">
+      <a href="../../nextjs/deployment.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -611,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../next-config/" class="md-nav__link">
+      <a href="../../nextjs/next-config.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -670,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theory/" class="md-nav__link">
+      <a href="../../theory/index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -703,23 +646,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -730,7 +678,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Misc
@@ -744,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/intro/" class="md-nav__link">
+      <a href="../intro.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -803,7 +751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/hoc/intro/" class="md-nav__link">
+      <a href="../hoc/intro.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -824,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/hoc/hooks-vs-hocs/" class="md-nav__link">
+      <a href="../hoc/hooks-vs-hocs.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -845,7 +793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/hoc/naming-convention/" class="md-nav__link">
+      <a href="../hoc/naming-convention.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -866,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/hoc/hooks/" class="md-nav__link">
+      <a href="../hoc/hooks.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -892,6 +840,8 @@
                 
   
   
+    
+  
   
   
     
@@ -901,11 +851,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -919,7 +869,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             WebSockets
@@ -933,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/websockets/introduction/" class="md-nav__link">
+      <a href="introduction.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -954,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/websockets/setup/" class="md-nav__link">
+      <a href="setup.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -972,10 +922,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../miscellaneous/websockets/examples/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="examples.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -984,6 +941,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -996,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/websockets/troubleshooting/" class="md-nav__link">
+      <a href="troubleshooting.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1063,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/push-notifications/introduction/" class="md-nav__link">
+      <a href="../push-notifications/introduction.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/push-notifications/setup/" class="md-nav__link">
+      <a href="../push-notifications/setup.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1105,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/push-notifications/examples/" class="md-nav__link">
+      <a href="../push-notifications/examples.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1126,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/push-notifications/best-practices/" class="md-nav__link">
+      <a href="../push-notifications/best-practices.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1172,25 +1130,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#folder-structure-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠 Folder Structure Comparison
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1205,66 +1144,16 @@
                   
 
 
-<h1 id="nextjs-folder-structure">📂 Next.js Folder Structure</h1>
-<p>A standard <strong>Next.js project</strong> follows this folder structure:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>my-next-app/
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── .next/              # Build output (generated after build)
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── app/                # App Router (Next.js 13+)
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── layout.tsx      # Root layout
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   └── page.tsx        # Root page
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── pages/              # Pages Router (Legacy)
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   └── index.js        # Homepage
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── components/         # Reusable components
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>├── public/             # Static files (images, fonts, etc.)
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>├── styles/             # Global CSS files
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>├── next.config.js      # Next.js configuration
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>├── package.json        # Project dependencies
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>└── README.md           # Project documentation
-</span></code></pre></div>
-<p><strong>📌 Key Folders</strong></p>
+  <h1>Example</h1>
+
 <ul>
-<li><code>app/</code>: New App Router for routes and layouts.</li>
-<li><code>pages/</code>: Legacy Pages Router for defining routes.</li>
-<li><code>public/</code>: Static assets like images, fonts, and files.</li>
+<li>SignalR: Best for real-time communication (two-way communication) between clients and server.</li>
+<li>Push Notifications: Best for one-way alerts to users even when they are not actively interacting with the app.</li>
 </ul>
+<p>SignalR Example: A real-time chat app where users can send and receive messages instantly without refreshing the page. You might want to use SignalR to broadcast messages as they come in.</p>
+<p>Push Notifications Example: A notification when a user receives a new email, even if they are not actively on the app or the browser. This requires setting up push notifications with service workers.</p>
 <hr />
-<h2 id="folder-structure-comparison">🛠 Folder Structure Comparison</h2>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>App Router</th>
-<th>Pages Router</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Routing</td>
-<td>File-based</td>
-<td>File-based</td>
-</tr>
-<tr>
-<td>Layouts</td>
-<td>Nested layouts</td>
-<td>No nested layouts</td>
-</tr>
-<tr>
-<td>Server Components</td>
-<td>Supported</td>
-<td>Not supported</td>
-</tr>
-<tr>
-<td>Data Fetching Methods</td>
-<td>SSG, SSR, ISR</td>
-<td>SSG, SSR</td>
-</tr>
-<tr>
-<td>API Routes</td>
-<td><code>/app/api/</code> folder</td>
-<td><code>/pages/api/</code> folder</td>
-</tr>
-</tbody>
-</table>
+<p>No, @microsoft/signalr and push notifications are not the same in React, though both can be used to achieve real-time communication.</p>
 
 
 
@@ -1300,7 +1189,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro">
+          <a href="setup.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1310,20 +1199,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Intro
+                Setup
               </div>
             </div>
           </a>
         
         
           
-          <a href="../routing/" class="md-footer__link md-footer__link--next" aria-label="Next: Routing">
+          <a href="troubleshooting.html" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Routing
+                Troubleshooting
               </div>
             </div>
             <div class="md-footer__button md-icon">
