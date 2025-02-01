@@ -1342,6 +1342,88 @@
 </ul>
 <p>These features have made Next.js a popular choice among developers looking to build powerful and performant web applications.</p>
 <hr />
+<div class="admonition question">
+<p class="admonition-title">Why <code>import * as Next from "next"</code> Doesn't Work as Expected</p>
+</div>
+<details class="danger" open="open">
+<summary>Why import <code>*</code> as Next from "next" Doesn't Work as Expected</summary>
+<ol>
+<li>
+<p><strong>next is a Framework, Not a Regular Module</strong>:</p>
+<ul>
+<li>
+<p><code>next</code> is a framework used to build your Next.js application, and it isn't structured like a normal JavaScript module that you can import and log the way you can with React.</p>
+</li>
+<li>
+<p>The <code>next</code> package doesn't expose an object that you can easily access via <code>import * as Next</code>. Instead, it provides a set of API functionalities such as <code>next.config.js</code>, <code>getServerSideProps</code>, <code>getStaticProps</code>, and others for building your app, but they don't expose a central module object that you can just log out directly.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Next.js' Internal Modules Are Not Directly Importable</strong>:</p>
+<ul>
+<li>
+<p>Some of the features or utilities that Next.js provides (like <code>next/head</code>, <code>next/router</code>, etc.) are accessible directly by importing them into your code.</p>
+</li>
+<li>
+<p>But trying to import the whole framework with <code>import * as Next from "next"</code> doesn’t make sense because it’s not structured to expose a module in that way.</p>
+</li>
+</ul>
+</li>
+</ol>
+</details>
+<p><strong>How to Use Next.js in a Way That Makes Sense</strong></p>
+<p>If you're trying to access certain functionalities from Next.js (like the router, head management, etc.), you would need to import specific parts of the Next.js API, like this:</p>
+<ol>
+<li>
+<p>Next.js Router:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useRouter</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;next/router&quot;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">router</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useRouter</span><span class="p">();</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">router</span><span class="p">);</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Next.js Head:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Head</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;next/head&quot;</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Head</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs the Head component</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Next.js APIs (getServerSideProps, getStaticProps):</p>
+<p>You can't really import and log Next.js functions directly in the same way. These are special functions that are part of the framework's lifecycle, so they don’t export a general object.</p>
+</li>
+</ol>
+<p><strong>Example: Proper Usage</strong></p>
+<p>If you want to explore what’s available in Next.js or just experiment with some of its utilities, here’s an example:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// pages/index.js</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">Head</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;next/head&quot;</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useRouter</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;next/router&quot;</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">Home</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">router</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useRouter</span><span class="p">();</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="c1">// Log the router object</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">router</span><span class="p">);</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">Head</span><span class="o">&gt;</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">title</span><span class="o">&gt;</span><span class="nx">Next</span><span class="p">.</span><span class="nx">js</span><span class="w"> </span><span class="nx">Page</span><span class="o">&lt;</span><span class="err">/title&gt;</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">      </span><span class="o">&lt;</span><span class="err">/Head&gt;</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Welcome</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">Next</span><span class="p">.</span><span class="nx">js</span><span class="o">!&lt;</span><span class="err">/h1&gt;</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="p">}</span>
+</span></code></pre></div>
+<details class="quote" open="open">
+<summary>Summary</summary>
+<p>To sum it up:</p>
+<ul>
+<li><code>next</code> doesn’t export a general object like <code>React</code> does. You can’t <code>import * as Next</code> and expect to log the entire framework.</li>
+<li>If you want to use specific features from Next.js (like routing, head management, etc.), you need to import them individually as needed.</li>
+</ul>
+</details>
+<hr />
 <h2 id="reference">Reference</h2>
 <ul>
 <li><a href="https://www.amazon.com/Dynamic-Trio-Building-Applications-Tailwind-ebook/dp/B0C2FH7F99">Dynamic Trio by By Grace Huang, pg: 20</a></li>

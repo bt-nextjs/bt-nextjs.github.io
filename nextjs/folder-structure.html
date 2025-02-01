@@ -615,6 +615,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-and-file-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder and file conventions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Folder and file conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#top-level-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top-level folders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-level-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top-level files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1360,6 +1411,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-and-file-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder and file conventions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Folder and file conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#top-level-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top-level folders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-level-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top-level files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1435,6 +1537,170 @@
 </tr>
 </tbody>
 </table>
+<hr />
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Folder Structure</label><label for="__tabbed_1_2">🔹 Key Directories Explained</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>my-nextjs-app/
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>│── public/                # Static assets (images, fonts, etc.)
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>│── src/                   # Source code (optional, recommended)
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>│   ├── app/               # App Router (used in Next.js 13+ with &quot;app directory&quot;)
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>│   │   ├── layout.tsx     # Root layout for the app (persists across pages)
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│   │   ├── page.tsx       # The main page (route: &quot;/&quot;)
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│   │   ├── dashboard/     # Nested route example (&quot;/dashboard&quot;)
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│   │   │   ├── page.tsx   # Page inside dashboard route
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>│   │   │   ├── layout.tsx # Layout for dashboard pages
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>│   │   ├── api/           # API routes (server actions)
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│   ├── components/        # Reusable UI components
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>│   ├── hooks/             # Custom React hooks
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>│   ├── lib/               # Utility functions and helper methods
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>│   ├── styles/            # Global styles (CSS, SCSS, Tailwind)
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>│   ├── store/             # State management (Zustand, Redux, etc.)
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>│── pages/                 # (Legacy) Pages Router (Used before Next.js 13)
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>│── .next/                 # Build output (generated after running `next build`)
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>│── node_modules/          # Installed dependencies
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>│── .env                   # Environment variables
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>│── next.config.js         # Next.js configuration file
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>│── package.json           # Project dependencies and scripts
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>│── tsconfig.json          # TypeScript configuration (if using TypeScript)
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>│── README.md              # Project documentation
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code>public/</code> → Stores static assets (images, favicons, etc.)</li>
+<li><code>src/app/</code> → Used for <strong>App Router</strong> (<code>app directory</code>) if using Next.js 13+</li>
+<li><code>pages/</code> → (Legacy) Used for <strong>Pages Router</strong> (before Next.js 13)</li>
+<li><code>components/</code> → Stores reusable UI components</li>
+<li><code>lib/</code> → Common utility functions (API calls, helpers)</li>
+<li><code>store/</code> → State management (Redux, Zustand, etc.)</li>
+<li><code>hooks/</code> → Custom React hooks</li>
+<li><code>styles/</code> → Global styles (CSS, Tailwind, etc.)</li>
+<li><code>api/</code> → API routes (if using App Router)</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Since you are working with React &amp; Redux Toolkit, you might organize Redux slices inside <code>store/</code>.</p>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Would you like a structure tailored to your feature-based approach? 🚀</p>
+</div>
+<p>Since you follow a feature-based approach, here's a Next.js project structure optimized for modularity with Redux Toolkit (RTK) and your preferred setup:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>my-nextjs-app/
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>│── public/                # Static assets (images, fonts, etc.)
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>│── src/                   # Source code (recommended structure)
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>│   ├── app/               # App Router (Next.js 13+)
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>│   │   ├── layout.tsx     # Root layout (persists across pages)
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│   │   ├── page.tsx       # Home page (&quot;/&quot;)
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>│   │   ├── dashboard/     # Example nested route (&quot;/dashboard&quot;)
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>│   │   │   ├── page.tsx   # Dashboard page
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>│   │   │   ├── layout.tsx # Layout for dashboard pages
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>│   │   ├── api/           # API routes (if needed)
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>│   ├── features/          # Feature-based approach
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>│   │   ├── auth/          # Authentication feature
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>│   │   │   ├── components/LoginForm.tsx
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>│   │   │   ├── hooks/useAuth.ts
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>│   │   │   ├── services/authService.ts
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>│   │   │   ├── store/authSlice.ts
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>│   │   │   ├── types.ts   # TypeScript types (if using TS)
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>│   │   ├── assignments/   # Example: Assignments feature
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>│   │   │   ├── components/AssignmentCard.tsx
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>│   │   │   ├── store/assignmentSlice.ts
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>│   │   │   ├── services/assignmentAPI.ts
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>│   │   │   ├── hooks/useAssignments.ts
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>│   │   │   ├── types.ts
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>│   ├── shared/            # Shared utilities and resources
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>│   │   ├── components/    # Reusable UI components
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>│   │   ├── hooks/         # Custom React hooks
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>│   │   ├── layouts/       # Shared layouts (e.g., Sidebar, Header)
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>│   │   ├── services/      # Global API services
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>│   │   ├── utils/         # Helper functions
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>│   │   ├── store/         # Global Redux store
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>│   │   │   ├── store.ts   # Redux store configuration
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>│   │   │   ├── rootReducer.ts # Combine reducers
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>│   │   │   ├── middlewares.ts  # Custom middlewares (if needed)
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>│   ├── styles/            # Global styles (CSS/Tailwind)
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>│── .next/                 # Build output
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>│── node_modules/          # Installed dependencies
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>│── .env                   # Environment variables
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>│── next.config.js         # Next.js configuration
+</span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>│── package.json           # Project dependencies
+</span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>│── tsconfig.json          # TypeScript configuration
+</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>│── README.md              # Project documentation
+</span></code></pre></div>
+<p><strong>🚀 Key Improvements for Your Setup</strong></p>
+<ul>
+<li><strong>✅ Feature-Based Structure</strong> → Each feature (e.g., <code>auth</code>, <code>assignments</code>) has its own <code>components</code>, <code>hooks</code>, <code>store</code>, and <code>services</code>.</li>
+<li><strong>✅ Centralized Shared Folder</strong> → Common resources like <code>utils</code>, <code>hooks</code>, <code>layouts</code>, and <code>components</code> stay in <code>shared/</code>.</li>
+<li><strong>✅ Redux Toolkit Store Inside <code>shared/store/</code></strong> → Keeps slices modular but still centrally managed.</li>
+<li><strong>✅ TypeScript-Ready (<code>types.ts</code> per feature)</strong> → Easy type sharing if you use TypeScript later.</li>
+</ul>
+<hr />
+<h2 id="project-structure"><a href="https://www.tutorialspoint.com/nextjs/nextjs_project_structure.htm">Project Structure</a></h2>
+<p>Next.js project structure is based on routing system. The routing system in Next.js is file-based, which means the file structure inside the <code>pages/</code> or <code>app/</code> directory determines the application routes automatically.</p>
+<h2 id="folder-and-file-conventions"><a href="https://nextjs.org/docs/app/getting-started/project-structure#folder-and-file-conventions">Folder and file conventions</a></h2>
+<h3 id="top-level-folders">Top-level folders</h3>
+<p>Top-level folders are used to organize your application's code and static assets.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>app</code></td>
+<td>App Router</td>
+</tr>
+<tr>
+<td><code>pages</code></td>
+<td>Pages Router</td>
+</tr>
+<tr>
+<td><code>public</code></td>
+<td>Static assets to be served</td>
+</tr>
+<tr>
+<td><code>src</code></td>
+<td>Optional application source folder</td>
+</tr>
+</tbody>
+</table>
+<h3 id="top-level-files">Top-level files</h3>
+<p>Top-level files are used to configure your application, manage dependencies, run middleware, integrate monitoring tools, and define environment variables.</p>
+<table>
+<thead>
+<tr>
+<th>Next.js</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>next.config.js</code></td>
+<td>Configuration file for Next.js</td>
+</tr>
+<tr>
+<td><code>package.json</code></td>
+<td>Project dependencies and scripts</td>
+</tr>
+<tr>
+<td><code>instrumentation.ts</code></td>
+<td>OpenTelemetry and Instrumentation file</td>
+</tr>
+<tr>
+<td><code>middleware.ts</code></td>
+<td>Next.js request middleware</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://www.tutorialspoint.com/nextjs/nextjs_project_structure.htm">Project Structure</a></li>
+</ul>
 
 
 
