@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://bt-nextjs.github.io/nextjs/data-fetching/">
+        <link rel="canonical" href="https://bt-nextjs.github.io/typescript/react-fc/example/">
       
       
-        <link rel="prev" href="../api-routes/">
+        <link rel="prev" href="../react-fc/">
       
       
-        <link rel="next" href="../deployment/">
+        <link rel="next" href="../../../miscellaneous/intro/">
       
       
-      <link rel="icon" href="../../assets/logo/next-js.ico">
+      <link rel="icon" href="../../../assets/logo/next-js.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
     
     
       
-        <title>Data Fetching - Next.js Organization</title>
+        <title>Example - Next.js Organization</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -66,7 +66,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-fetching-in-nextjs" class="md-skip">
+        <a href="#example" class="md-skip">
           Skip to content
         </a>
       
@@ -101,9 +101,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Next.js Organization" class="md-header__button md-logo" aria-label="Next.js Organization" data-md-component="logo">
+    <a href="../../.." title="Next.js Organization" class="md-header__button md-logo" aria-label="Next.js Organization" data-md-component="logo">
       
-  <img src="../../assets/logo/next-js.png" alt="logo">
+  <img src="../../../assets/logo/next-js.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Fetching
+              Example
             
           </span>
         </div>
@@ -221,7 +221,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../blog/" class="md-tabs__link">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tools/overview/" class="md-tabs__link">
+        <a href="../../../tools/overview/" class="md-tabs__link">
           
   
   Tools
@@ -253,13 +253,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../nextjs/intro/" class="md-tabs__link">
           
   
   Next.js
@@ -277,7 +275,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../ssr/overview/" class="md-tabs__link">
+        <a href="../../../ssr/overview/" class="md-tabs__link">
           
   
   SSR
@@ -291,11 +289,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../typescript/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
           
   
   Typescript
@@ -313,7 +313,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../miscellaneous/intro/" class="md-tabs__link">
+        <a href="../../../miscellaneous/intro/" class="md-tabs__link">
           
   
   Misc
@@ -352,9 +352,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Next.js Organization" class="md-nav__button md-logo" aria-label="Next.js Organization" data-md-component="logo">
+    <a href="../../.." title="Next.js Organization" class="md-nav__button md-logo" aria-label="Next.js Organization" data-md-component="logo">
       
-  <img src="../../assets/logo/next-js.png" alt="logo">
+  <img src="../../../assets/logo/next-js.png" alt="logo">
 
     </a>
     Next.js Organization
@@ -409,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/" class="md-nav__link">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -430,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -496,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/overview/" class="md-nav__link">
+      <a href="../../../tools/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,28 +521,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -553,7 +548,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Next.js
@@ -567,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../../nextjs/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../folder-structure/" class="md-nav__link">
+      <a href="../../../nextjs/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../routing/" class="md-nav__link">
+      <a href="../../../nextjs/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-routes/" class="md-nav__link">
+      <a href="../../../nextjs/api-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,30 +643,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Data Fetching
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../nextjs/data-fetching/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -680,35 +655,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example-server-side-rendering-ssr" class="md-nav__link">
-    <span class="md-ellipsis">
-      📋 Example: Server-Side Rendering (SSR)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -721,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployment/" class="md-nav__link">
+      <a href="../../../nextjs/deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -742,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../next-config/" class="md-nav__link">
+      <a href="../../../nextjs/next-config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -801,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../theory/" class="md-nav__link">
+      <a href="../../../nextjs/theory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -822,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../theory/rendering-strategies/" class="md-nav__link">
+      <a href="../../../nextjs/theory/rendering-strategies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -843,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../theory/web-vitals/" class="md-nav__link">
+      <a href="../../../nextjs/theory/web-vitals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -917,7 +863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ssr/overview/" class="md-nav__link">
+      <a href="../../../ssr/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -942,23 +888,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -969,7 +920,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Typescript
@@ -983,7 +934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1004,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/basics/" class="md-nav__link">
+      <a href="../../basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1025,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/functions/" class="md-nav__link">
+      <a href="../../functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1046,7 +997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/classes/" class="md-nav__link">
+      <a href="../../classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1067,7 +1018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/advanced/" class="md-nav__link">
+      <a href="../../advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1126,7 +1077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1147,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/compiler/" class="md-nav__link">
+      <a href="../../compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1168,7 +1119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/core-concept/" class="md-nav__link">
+      <a href="../../core-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1189,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/one-hour-ts/" class="md-nav__link">
+      <a href="../../one-hour-ts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1215,6 +1166,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1224,11 +1177,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" checked>
         
           
           <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
@@ -1242,7 +1195,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_7">
             <span class="md-nav__icon md-icon"></span>
             React FC
@@ -1256,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/react-fc/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1277,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/react-fc/react-fc/" class="md-nav__link">
+      <a href="../react-fc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1295,10 +1248,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../typescript/react-fc/example/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1307,6 +1278,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-doesnt-need-a-return-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Doesn't Need a return Statement:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1372,7 +1388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/intro/" class="md-nav__link">
+      <a href="../../../miscellaneous/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1393,7 +1409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/practical/" class="md-nav__link">
+      <a href="../../../miscellaneous/practical/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1452,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/hoc/intro/" class="md-nav__link">
+      <a href="../../../miscellaneous/hoc/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1473,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/hoc/hooks-vs-hocs/" class="md-nav__link">
+      <a href="../../../miscellaneous/hoc/hooks-vs-hocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1494,7 +1510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/hoc/naming-convention/" class="md-nav__link">
+      <a href="../../../miscellaneous/hoc/naming-convention/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1515,7 +1531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/hoc/hooks/" class="md-nav__link">
+      <a href="../../../miscellaneous/hoc/hooks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1582,7 +1598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/websockets/introduction/" class="md-nav__link">
+      <a href="../../../miscellaneous/websockets/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1603,7 +1619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/websockets/setup/" class="md-nav__link">
+      <a href="../../../miscellaneous/websockets/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1624,7 +1640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/websockets/examples/" class="md-nav__link">
+      <a href="../../../miscellaneous/websockets/examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1645,7 +1661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/websockets/troubleshooting/" class="md-nav__link">
+      <a href="../../../miscellaneous/websockets/troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1712,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/push-notifications/introduction/" class="md-nav__link">
+      <a href="../../../miscellaneous/push-notifications/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1733,7 +1749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/push-notifications/setup/" class="md-nav__link">
+      <a href="../../../miscellaneous/push-notifications/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1754,7 +1770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/push-notifications/examples/" class="md-nav__link">
+      <a href="../../../miscellaneous/push-notifications/examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1775,7 +1791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/push-notifications/best-practices/" class="md-nav__link">
+      <a href="../../../miscellaneous/push-notifications/best-practices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1821,8 +1837,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1831,9 +1845,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example-server-side-rendering-ssr" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
-      📋 Example: Server-Side Rendering (SSR)
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-doesnt-need-a-return-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Doesn't Need a return Statement:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary:
     </span>
   </a>
   
@@ -1854,22 +1886,95 @@
                   
 
 
-<h1 id="data-fetching-in-nextjs">📡 Data Fetching in Next.js</h1>
-<p>Next.js supports various data-fetching strategies:</p>
-<ol>
-<li><strong>Server-Side Rendering (SSR)</strong></li>
-<li><strong>Static Site Generation (SSG)</strong></li>
-<li><strong>Incremental Static Regeneration (ISR)</strong></li>
-<li><strong>Client-Side Fetching</strong></li>
-</ol>
-<hr />
-<h3 id="example-server-side-rendering-ssr">📋 Example: Server-Side Rendering (SSR)</h3>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// app/page.tsx</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">export</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">getServerSideProps</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;https://api.example.com/data&quot;</span><span class="p">);</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+  <h1>Example</h1>
+
+<h2 id="example">Example</h2>
+<div class="admonition question">
+<p class="admonition-title">so using React.FC expects the return statements? is it correct</p>
+</div>
+<p><strong>Yes</strong>, that's correct! When you use <code>React.FC</code>, it expects your component to return <code>valid JSX</code> (or <code>ReactNode</code>), as it infers the return type to be a React element.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="language-ts highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;react&quot;</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">FormProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;antd&quot;</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Button</span><span class="p">,</span><span class="w"> </span><span class="nx">Checkbox</span><span class="p">,</span><span class="w"> </span><span class="nx">Form</span><span class="p">,</span><span class="w"> </span><span class="nx">Input</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;antd&quot;</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kr">type</span><span class="w"> </span><span class="nx">FieldType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nx">username?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nx">password?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nx">remember?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">};</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="kd">const</span><span class="w"> </span><span class="nx">onFinish</span><span class="o">:</span><span class="w"> </span><span class="kt">FormProps</span><span class="o">&lt;</span><span class="nx">FieldType</span><span class="o">&gt;</span><span class="p">[</span><span class="s2">&quot;onFinish&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">values</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Success:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">values</span><span class="p">);</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">};</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="kd">const</span><span class="w"> </span><span class="nx">onFinishFailed</span><span class="o">:</span><span class="w"> </span><span class="kt">FormProps</span><span class="o">&lt;</span><span class="nx">FieldType</span><span class="o">&gt;</span><span class="p">[</span><span class="s2">&quot;onFinishFailed&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">errorInfo</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Failed:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">errorInfo</span><span class="p">);</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="p">};</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="kd">const</span><span class="w"> </span><span class="nx">App</span><span class="o">:</span><span class="w"> </span><span class="kt">React.FC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">Form</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;basic&quot;</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="nx">labelCol</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">span</span><span class="o">:</span><span class="w"> </span><span class="kt">8</span><span class="w"> </span><span class="p">}}</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="nx">wrapperCol</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">span</span><span class="o">:</span><span class="w"> </span><span class="kt">16</span><span class="w"> </span><span class="p">}}</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">maxWidth</span><span class="o">:</span><span class="w"> </span><span class="kt">600</span><span class="w"> </span><span class="p">}}</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="nx">initialValues</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">remember</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="w"> </span><span class="p">}}</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">        </span><span class="nx">onFinish</span><span class="o">=</span><span class="p">{</span><span class="nx">onFinish</span><span class="p">}</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">        </span><span class="nx">onFinishFailed</span><span class="o">=</span><span class="p">{</span><span class="nx">onFinishFailed</span><span class="p">}</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span><span class="nx">autoComplete</span><span class="o">=</span><span class="s2">&quot;off&quot;</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">    </span><span class="o">&gt;</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Form</span><span class="p">.</span><span class="nx">Item</span><span class="o">&lt;</span><span class="nx">FieldType</span><span class="o">&gt;</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">            </span><span class="nx">label</span><span class="o">=</span><span class="s2">&quot;Username&quot;</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">            </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;username&quot;</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">            </span><span class="nx">rules</span><span class="o">=</span><span class="p">{[{</span><span class="w"> </span><span class="nx">required</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Please input your username!&quot;</span><span class="w"> </span><span class="p">}]}</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">        </span><span class="o">&gt;</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">Input</span><span class="w"> </span><span class="o">/&gt;</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/Form.Item&gt;</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Form</span><span class="p">.</span><span class="nx">Item</span><span class="o">&lt;</span><span class="nx">FieldType</span><span class="o">&gt;</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">            </span><span class="nx">label</span><span class="o">=</span><span class="s2">&quot;Password&quot;</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">            </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;password&quot;</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">            </span><span class="nx">rules</span><span class="o">=</span><span class="p">{[{</span><span class="w"> </span><span class="nx">required</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Please input your password!&quot;</span><span class="w"> </span><span class="p">}]}</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">        </span><span class="o">&gt;</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">Input</span><span class="p">.</span><span class="nx">Password</span><span class="w"> </span><span class="o">/&gt;</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/Form.Item&gt;</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Form</span><span class="p">.</span><span class="nx">Item</span><span class="o">&lt;</span><span class="nx">FieldType</span><span class="o">&gt;</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;remember&quot;</span><span class="w"> </span><span class="nx">valuePropName</span><span class="o">=</span><span class="s2">&quot;checked&quot;</span><span class="w"> </span><span class="nx">label</span><span class="o">=</span><span class="p">{</span><span class="kc">null</span><span class="p">}</span><span class="o">&gt;</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">Checkbox</span><span class="o">&gt;</span><span class="nx">Remember</span><span class="w"> </span><span class="nx">me</span><span class="o">&lt;</span><span class="err">/Checkbox&gt;</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/Form.Item&gt;</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Form</span><span class="p">.</span><span class="nx">Item</span><span class="w"> </span><span class="nx">label</span><span class="o">=</span><span class="p">{</span><span class="kc">null</span><span class="p">}</span><span class="o">&gt;</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">Button</span><span class="w"> </span><span class="kr">type</span><span class="o">=</span><span class="s2">&quot;primary&quot;</span><span class="w"> </span><span class="nx">htmlType</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span><span class="o">&gt;</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">                </span><span class="nx">Submit</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">            </span><span class="o">&lt;</span><span class="err">/Button&gt;</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/Form.Item&gt;</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/Form&gt;</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="p">);</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span><span class="p">;</span>
 </span></code></pre></div>
+</details>
+<p>Great question! The key thing to understand here is that <strong>React.FC (FunctionComponent)</strong> is a shortcut for defining a functional component in TypeScript, but it <strong>doesn't enforce a <code>return</code> statement in the sense of needing an explicit return</strong> like other JavaScript functions. The <code>App</code> component <strong>implicitly returns JSX</strong> because that's the behavior of functional components in React.</p>
+<h2 id="why-it-doesnt-need-a-return-statement">Why It Doesn't Need a <code>return</code> Statement:</h2>
+<ol>
+<li>
+<p><strong>Implicit Return</strong>: In JSX, the return of the JSX element is implicit. When you write JSX directly inside a function body like this:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>const App: React.FC = () =&gt; &lt;Form&gt;...&lt;/Form&gt;;
+</span></code></pre></div>
+<p>It's equivalent to:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>const App: React.FC = () =&gt; {
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  return &lt;Form&gt;...&lt;/Form&gt;;
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>};
+</span></code></pre></div>
+<p>The parentheses <code>()</code> after the arrow function indicate an implicit return of JSX (the <code>Form</code> component in this case). This shorthand is common in React components.</p>
+</li>
+<li>
+<p><strong>React.FC</strong>: Using <code>React.FC</code> does not require a <code>return</code> statement in a conventional way because the implicit return feature of arrow functions is being used. So, in your example, <code>React.FC</code> is just a typing convention, and the actual component implicitly returns the JSX in the form of the <code>Form</code> component.</p>
+</li>
+</ol>
+<h2 id="summary">Summary:</h2>
+<p><code>React.FC</code> does not change the behavior of how JSX is returned. The component still returns JSX implicitly through the arrow function syntax. The parentheses <code>()</code> after the arrow function are what make this return implicit, so you don't need to explicitly write <code>return</code> if you're writing JSX directly.</p>
 
 
 
@@ -1905,7 +2010,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../api-routes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: API Routes">
+          <a href="../react-fc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: React.FC">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1915,20 +2020,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                API Routes
+                React.FC
               </div>
             </div>
           </a>
         
         
           
-          <a href="../deployment/" class="md-footer__link md-footer__link--next" aria-label="Next: Deployment">
+          <a href="../../../miscellaneous/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Deployment
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1962,10 +2067,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
