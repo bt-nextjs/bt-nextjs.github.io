@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://bt-nextjs.github.io/blog/index.html">
+        <link rel="canonical" href="https://bt-nextjs.github.io/nextjs/routing.html">
       
       
+        <link rel="prev" href="folder-structure.html">
       
-        <link rel="next" href="../nextjs/intro.html">
+      
+        <link rel="next" href="api-routes.html">
       
       
       <link rel="icon" href="../assets/logo/next-js.ico">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Index - Next.js Organization</title>
+        <title>Routing - Next.js Organization</title>
       
     
     
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blog" class="md-skip">
+        <a href="#3-routingmd-routing-in-nextjs" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Routing
             
           </span>
         </div>
@@ -206,13 +208,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="index.html" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../blog/index.html" class="md-tabs__link">
           
   
   Blog
@@ -226,11 +226,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../nextjs/intro.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="intro.html" class="md-tabs__link">
           
   
   Next.js
@@ -319,28 +321,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -351,7 +348,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -362,32 +359,12 @@
                 
   
   
-    
-  
   
     
-      
-    
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Index
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../blog/index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -396,33 +373,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blog" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blog
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -460,23 +410,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -487,7 +442,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Next.js
@@ -501,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nextjs/intro.html" class="md-nav__link">
+      <a href="intro.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -522,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nextjs/folder-structure.html" class="md-nav__link">
+      <a href="folder-structure.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -540,10 +495,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../nextjs/routing.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Routing
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="routing.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -552,6 +525,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-routingmd-routing-in-nextjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 3. routing.md (Routing in Next.js)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routing-in-nextjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Routing in Next.js
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 Routing in Next.js">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#app-router-new-in-nextjs-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂 App Router (New in Next.js 13+)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -564,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nextjs/api-routes.html" class="md-nav__link">
+      <a href="api-routes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nextjs/data-fetching.html" class="md-nav__link">
+      <a href="data-fetching.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -606,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nextjs/deployment.html" class="md-nav__link">
+      <a href="deployment.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -627,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nextjs/next-config.html" class="md-nav__link">
+      <a href="next-config.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1262,11 +1286,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#blog" class="md-nav__link">
+  <a href="#3-routingmd-routing-in-nextjs" class="md-nav__link">
     <span class="md-ellipsis">
-      Blog
+      📝 3. routing.md (Routing in Next.js)
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routing-in-nextjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Routing in Next.js
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 Routing in Next.js">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#app-router-new-in-nextjs-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂 App Router (New in Next.js 13+)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1279,16 +1327,45 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h2 id="blog">Blog</h2>
-      </header>
-      
-      
-    </div>
-  </div>
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
 
+
+<h2 id="3-routingmd-routing-in-nextjs">📝 <strong>3. <code>routing.md</code> (Routing in Next.js)</strong></h2>
+<h1 id="routing-in-nextjs">🌐 Routing in Next.js</h1>
+<p>Next.js uses <strong>file-based routing</strong>, where the file structure inside the <code>pages/</code> or <code>app/</code> folder determines the routes.</p>
+<h2 id="app-router-new-in-nextjs-13">🗂 App Router (New in Next.js 13+)</h2>
+<p>In the <strong>App Router</strong>, routes are defined inside the <code>app/</code> folder.</p>
+<p>Example:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>app/
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── page.tsx        # Route: /
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── about/
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   └── page.tsx    # Route: /about
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>└── dashboard/
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    └── page.tsx    # Route: /dashboard
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>pages/
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── index.js        # Route: /
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>├── about.js        # Route: /about
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>└── dashboard.js    # Route: /dashboard
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1307,15 +1384,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="folder-structure.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Folder Structure">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Folder Structure
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="../nextjs/intro.html" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
+          <a href="api-routes.html" class="md-footer__link md-footer__link--next" aria-label="Next: API Routes">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Intro
+                API Routes
               </div>
             </div>
             <div class="md-footer__button md-icon">
